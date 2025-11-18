@@ -29,7 +29,7 @@
             <footer class="gh-card-meta">
                 <time class="gh-card-date" datetime="{{date format="YYYY-MM-DD"}}">{{date format="DD MMM YYYY"}}</time>
                 {{#if reading_time}}
-                    <span class="gh-card-length">{{reading_time}}</span>
+                    <span class="gh-card-length">{{reading_time minute="une minute de lecture" minutes="% minutes de lecture"}}</span>
                 {{/if}}
                 {{#unless access}}
                 {{^has visibility="public"}}
