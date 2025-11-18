@@ -10,7 +10,7 @@ jobs:
       - uses: actions/checkout@master
       - run: npm install
       - run: npm run zip
-      - uses: TryGhost/action-deploy-theme@v1.6.2
+      - uses: TryGhost/action-deploy-theme@v1
         with:
           api-url: ${{ secrets.GHOST_ADMIN_API_URL }}
           api-key: ${{ secrets.GHOST_ADMIN_API_KEY }}
