@@ -47,6 +47,19 @@
 
 <main class="gh-main gh-outer">
     <div class="gh-feed gh-inner">
+        {{!-- Bloc qui affiche le contenu de la page /home --}}
+        {{#get "pages" filter="slug:home" limit="1"}}
+            {{#foreach pages}}
+                <section class="home-intro">
+                    <h1 class="home-intro-title">{{title}}</h1>
+                    <div class="home-intro-content">
+                        {{content}}
+                    </div>
+                </section>
+            {{/foreach}}
+        {{/get}}
+
+        
         {{#foreach posts}}
             {{> "loop"}}
         {{/foreach}}
