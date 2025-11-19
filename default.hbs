@@ -46,7 +46,8 @@
                     <a class="gh-head-logo" href="{{@site.url}}">
                         {{#if @site.logo}}
                             <img src="{{@site.logo}}" alt="{{@site.title}}">
-                        {{else}}
+                        {{/if}}
+                        {{#if @custom.show_site_title_in_head}}
                             {{@site.title}}
                         {{/if}}
                     </a>
