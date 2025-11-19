@@ -59,6 +59,10 @@
             "footer_text": {
                 "type": "text"
             },
+            "show_site_title_in_head": {
+                "type": "boolean"
+                "default": false
+            },
             "header_section_layout": {
                 "type": "select",
                 "options": ["Side by side", "Large background", "Typographic profile"],
