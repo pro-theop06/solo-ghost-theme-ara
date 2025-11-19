@@ -17,6 +17,19 @@
         :root {
             --background-color: {{@custom.background_color}}
         }
+
+    /* Aligne le logo et le titre sur la même ligne, centrés verticalement */
+    .gh-head-logo {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem; /* espace entre le logo et le texte, à ajuster */
+        text-decoration: none;
+    }
+
+    .gh-head-logo img {
+        display: block;
+        width: auto;
+    }
     </style>
 
     <script>
