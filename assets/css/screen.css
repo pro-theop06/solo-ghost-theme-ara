@@ -6,7 +6,7 @@
     --font-serif: Libre Baskerville, Georgia, Times, serif;
     --font-mono: JetBrains Mono, Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
     --color-primary-text: var(--color-darker-gray);
-    --color-secondary-text-dark: rgba(0, 0, 0, 0.4);
+    --color-secondary-text-dark: rgba(0, 0, 0, 0.6);
     --color-secondary-text-light: rgba(255, 255, 255, 0.64);
     --color-secondary-text: var(--color-secondary-text-dark);
     --color-border: rgba(0, 0, 0, 0.08);
