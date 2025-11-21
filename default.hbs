@@ -5,8 +5,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{meta_title}}</title>
-    <link rel="stylesheet" href="{{asset "built/screen.css"}}">
-
+    <link rel="preload"href="{{asset "built/screen.css" as="style" />
+    <link rel="stylesheet" href="{{asset "built/screen.css"}}" media="print" onload="this.media='all'>
+    
     {{#is "home"}}
         {{#if @site.cover_image}}
             <link rel="preload" as="image" href="{{@site.cover_image}}">
