@@ -73,3 +73,17 @@ function initParallax() {
 (function () {
     pagination(true, initParallax);
 })();
+
+(function () {
+    // On force un recalcul du menu sur desktop juste après le chargement
+    const triggerMenuReflow = () => {
+        if (window.innerWidth < 768) return; // inutile en mobile
+        // provoque l'exécution du listener "resize" déjà défini dans dropdown()
+        window.dispatchEvent(new Event('resize'));
+    };
+
+    window.addEventListener('load', () => {
+        // petit délai pour laisser polices / layout / image LCP se stabiliser
+        setTimeout(triggerMenuReflow, 150);
+    });
+})();
