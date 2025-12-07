@@ -28,11 +28,11 @@
                         <div class="gh-article-meta-inner">
                             <div class="gh-author-image-list instapaper_ignore">
                                 {{#foreach authors}}
-                                    <a class="gh-author-image" href="{{url}}">
+                                    <a class="gh-author-image" href="{{url}}" aria-label="Voir le profil de {{name}}" >
                                         {{#if profile_image}}
-                                            <img src="{{profile_image}}" alt="{{name}}">
+                                            <img src="{{profile_image}}" alt="Photo de profil de {{name}}">
                                         {{else}}
-                                            <div class="gh-author-icon">{{> icons/avatar}}</div>
+                                            <div aria-hidden="true" class="gh-author-icon">{{> icons/avatar}}</div>
                                         {{/if}}
                                     </a>
                                 {{/foreach}}
